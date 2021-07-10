@@ -1,32 +1,28 @@
 {
-  "name": "suvera/winter-boot",
-  "description": "Winter Boot Framework",
-  "type": "library",
-  "config": {
-    "platform": {
-      "php": "8.0"
+    "name": "suvera/winter-tests",
+    "description": "Winter Boot Framework - Tests",
+    "type": "library",
+    "homepage": "https://suvera.github.io/",
+    "config": {
+        "platform": {
+            "php": "8.0"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Suvera"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "test\\winterframework\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+    ],
+    "require": {
+        "phpunit/phpunit": "10.0.x-dev"
     }
-  },
-  "license": "Apache",
-  "authors": [
-    {
-      "name": "Suvera",
-      "email": "rana.ram@gmail.com"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "test\\winterframework\\": "src/"
-    }
-  },
-  "minimum-stability": "dev",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/suvera/monolog-cascade"
-    }
-  ],
-  "require": {
-    "phpunit/phpunit": "10.0.x-dev"
-  }
 }
